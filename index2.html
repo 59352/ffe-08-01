@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="">
+let a = [];
+a[50] = 'atom';
+a[100] = 'board';
+a[150] = 'cake';
+a[200] = 'dog';
+a[250] = 'eagle';
+for (let key in a) {
+if (a.hasOwnProperty(key) && 
+/^0$|^[1-9]\d*$/.test(key) &&
+key <= 4294967294) {
+console.log(a.[key]);
+}
+}
+</script>
+
+</body>
+</html>
